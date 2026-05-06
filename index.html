@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suwangarlab | Home</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        :root { --primary: #6c5ce7; --secondary: #a29bfe; --bg: #f0f3f7; --text: #2d3436; }
+        body { font-family: 'Poppins', sans-serif; background: var(--bg); margin: 0; color: var(--text); }
+        nav { display: flex; justify-content: center; gap: 30px; padding: 25px; background: rgba(255,255,255,0.8); backdrop-filter: blur(10px); sticky; top: 0; z-index: 1000; }
+        nav a { text-decoration: none; color: var(--text); font-weight: 600; transition: 0.3s; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        nav a:hover { color: var(--primary); transform: translateY(-3px); }
+        
+        .hero { height: 85vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
+        .floating-card { 
+            background: white; padding: 50px; border-radius: 30px; 
+            box-shadow: 0 30px 60px rgba(108, 92, 231, 0.15); 
+            max-width: 700px; text-align: center;
+            animation: float 5s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-25px) rotate(1deg); }
+        }
+        h1 { font-size: 3.5rem; margin: 0; color: var(--primary); font-weight: 800; }
+        .description { font-size: 1.1rem; line-height: 1.8; color: #636e72; margin-top: 20px; }
+        footer { text-align: center; padding: 40px; font-weight: 800; color: var(--primary); letter-spacing: 2px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="produk.html">Produk</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+    <div class="hero">
+        <div class="floating-card">
+            <h1>Suwangarlab</h1>
+            <p class="description">Suwangarlab hadir sebagai laboratorium kreatif yang berfokus pada pengembangan literasi digital anak. Kami percaya bahwa edukasi berkualitas tidak harus mahal. Melalui kurasi e-book yang interaktif dan visual yang menarik, kami mendampingi tumbuh kembang imajinasi si kecil di era digital dengan cara yang menyenangkan.</p>
+        </div>
+    </div>
+    <footer>SUWANGARLAB</footer>
+</body>
+</html>
