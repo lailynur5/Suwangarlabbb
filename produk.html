@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk | Suwangarlab</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background: #f0f3f7; margin: 0; }
+        nav { display: flex; justify-content: center; gap: 30px; padding: 25px; background: white; }
+        nav a { text-decoration: none; color: #2d3436; font-weight: 600; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 60px 10%; }
+        .p-card { 
+            background: white; border-radius: 25px; padding: 20px; text-align: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08); transition: 0.4s;
+        }
+        .p-card:hover { transform: translateY(-15px); box-shadow: 0 25px 50px rgba(108, 92, 231, 0.2); }
+        .cover { background: #6c5ce7; height: 350px; border-radius: 15px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; }
+        .price { font-size: 1.4rem; color: #6c5ce7; font-weight: 800; margin: 15px 0; }
+        .buy-btn { 
+            display: block; background: #6c5ce7; color: white; padding: 12px; 
+            border-radius: 12px; text-decoration: none; font-weight: 600; transition: 0.3s;
+        }
+        .buy-btn:hover { background: #a29bfe; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="produk.html">Produk</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+    <div class="product-grid">
+        <div class="p-card">
+            <div class="cover">COVER E-BOOK</div>
+            <h3>Mengenal Warna</h3>
+            <p>E-book interaktif untuk mengenalkan berbagai macam warna pada anak.</p>
+            <div class="price">Rp10.000</div>
+            <a href="https://wa.me" class="buy-btn">Beli Sekarang</a>
+        </div>
+        <div class="p-card">
+            <div class="cover" style="background:#00cec9">COVER E-BOOK</div>
+            <h3>Petualangan Angka</h3>
+            <p>Belajar berhitung jadi jauh lebih seru dengan petualangan visual.</p>
+            <div class="price">Rp12.000</div>
+            <a href="https://wa.me" class="buy-btn">Beli Sekarang</a>
+        </div>
+        <div class="p-card">
+            <div class="cover" style="background:#fab1a0">COVER E-BOOK</div>
+            <h3>Dongeng Hewan</h3>
+            <p>Kumpulan kisah inspiratif para hewan yang penuh pesan moral.</p>
+            <div class="price">Rp15.000</div>
+            <a href="https://wa.me" class="buy-btn">Beli Sekarang</a>
+        </div>
+    </div>
+</body>
+</html>
